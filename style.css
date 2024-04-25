@@ -1,0 +1,141 @@
+@font-face { font-family: W95; src: url('./fonts/WindowsRegular.ttf'); } 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: W95;
+}
+body{
+	height: 100vh;
+    background-color: #00807F;
+    font-family: W95;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    background-color: #c0c0c0;
+    border: solid black 2px;
+}
+.logo img{
+    width: 50px;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 30px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    padding: 5px 100px;
+    box-sizing: border-box;
+}
+.navbar a:hover{
+    background-color: #6c6c6c;
+}
+.container{
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 100px;
+    height: 100vh;
+}
+.window{
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #c0c0c0;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+}
+
+.title-bar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;  
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+}
+.title-bar-text{
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+    margin-left: 10px;
+}
+.title-bar-controls i{
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-top: solid white 2px;
+    border-left: solid white 2px;
+    background-color: #c0c0c0;
+    font-size: 6px;
+    padding: 5px;
+    margin: 5px;
+}
+.window-body{
+    padding: 10px;
+}
+.window-body img{
+    object-fit: contain;
+}
+#pfp{
+    width:fit-content;
+    height: fit-content;
+    padding: 0px;
+    margin: 0px;
+}
+#name{
+    font-weight: 600;
+    font-size: 20px;
+}
+.window-body i{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+#qualW{
+height: 250px;
+}
+#wb1{
+    padding-left: 30px;
+}
+footer{
+    text-align: center;
+    padding: 4px;
+}
+#titleQ{
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 0px;
+    justify-content: center;
+}
+#qual{
+}
+
+@media screen and (max-width:800px) {
+    hr{visibility: hidden;
+        opacity: 0;
+    }
+    .window{width: 90vw;}
+    .container{
+        height: 100vh;
+        margin-top: 100px;
+    }
+    #pfp img{
+        max-width: 99%;
+    }
+    .navbar a {
+        display: block;   width: auto;  }
+
+}
